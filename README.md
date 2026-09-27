@@ -1,6 +1,21 @@
-# Group 24
+# About
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+About
+
+Hot Dog is a digital dog show platform that lets anyone participate, no matter where they are. Traditional dog shows require physical attendance, which excludes many potential participants. This platform removes that barrier — users can enter their own dog into a competition, or simply browse, vote, and comment on others. Both roles are equally valued parts of the experience.
+
+The goal is to create a fun and engaging space where users feel part of a shared community event. The platform is built incrementally, validating the core idea early and adjusting along the way.
+
+**Features**
+- User authentication (login)
+- Admin: create competitions with a configurable duration
+- User profiles with photos of your dog
+- Like and comment on dogs to support your favorite in a competition
+- Browse and explore other user profiles
+- Admin: content moderation tools
+- User: change your own password
+- Admin dashboard with user statistics
+- View upcoming competitions
 
 ## Creating a project
 
