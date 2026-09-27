@@ -1,0 +1,60 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: local
+    volumes:
+      - pgdata:/var/lib/postgresql
+volumes:
+  pgdata:
+
+# services:
+#   db:
+#     image: postgres:16
+#     container_name: app_db
+#     env_file: ../.env
+#     ports:
+#       - '5432:5432'
+#     volumes:
+#       - pgdata_dev:/var/lib/postgresql/data
+#     restart: unless-stopped
+
+#   pgadmin:
+#     image: dpage/pgadmin4:latest
+#     container_name: app_pgadmin
+#     env_file: ../.env
+#     ports:
+#       - '0.0.0.0:5050:80'
+#     volumes:
+#       - pgadmin_dev:/var/lib/pgadmin
+#     depends_on:
+#       - db
+#     restart: unless-stopped
+
+#   db_service: 
+#     build:
+#       context: ..
+#       dockerfile_inline: |
+#         FROM golang:1.25-alpine
+#         WORKDIR /app
+#         COPY go.mod go.sum ./
+#         RUN go mod download
+#         COPY src/lib/server/sql/ ./sql/ 
+#         COPY src/lib/server/db_service.go ./main.go
+#         COPY .env ./
+#         RUN go build -o manager main.go
+#         CMD ["./manager"]
+#     restart: always
+#     env_file:
+#       - ../.env
+#     depends_on:
+#       - db
+
+# volumes:
+#   pgdata_dev:
+#   pgadmin_dev:

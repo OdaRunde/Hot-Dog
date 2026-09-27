@@ -1,0 +1,84 @@
+[data-theme='light'] {
+	--color-background: #f7f8fa;
+	--color-surface: #ffffff;
+	--color-surface-alt: #f1f3f6;
+	--color-text-primary: #1f2937;
+	--color-text-secondary: #4b5563;
+	--color-text-muted: #9ca3af;
+	--color-border: #d1d5db;
+	--color-border-focus: #2563eb;
+	--color-primary: #ff77bb;
+	--color-primary-hover: #e04d8f;
+	--color-primary-active: #d13576;
+	--color-danger: red;
+	--color-danger-surface: #fee2e2;
+	--color-accent: #fecfe8;
+	--color-input-border-outline: #b9b9b9;
+	--color-input-border-outline-focus: #a92546;
+
+	--shadow-main: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+	--color-background: #1a1617;
+	--color-surface: #252122;
+	--color-surface-alt: #312b2c;
+	--color-text-primary: #f5f0f1;
+	--color-text-secondary: #d1c7c9;
+	--color-text-muted: #948688;
+	--color-border: #312b2c;
+	--color-border-focus: #2563eb;
+	--color-primary: #ff77bb;
+	--color-primary-hover: #ff6b85;
+	--color-primary-active: #e04d8f;
+	--color-danger: red;
+	--color-danger-surface: #3b1a1a;
+	--color-accent: #fecfe815;
+	--color-input-border-outline: #616161;
+	--color-input-border-outline-focus: #a92546;
+
+	--shadow-main: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+:root {
+	background-color: var(--color-background);
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-size: 19px;
+	font-weight: 500;
+	color: var(--color-text-primary);
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	/* prevent users from dragging images */
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-touch-callout: none;
+}
+
+.button {
+	padding: 8px;
+	border-radius: 4px;
+	background-color: rgb(from var(--color-text-primary) r g b / 8%);
+	border: 1px solid rgb(from var(--color-text-primary) r g b / 16%);
+	color: var(--color-text-primary);
+}
+
+.button:hover {
+	background-color: rgb(from var(---color-text-primary) r g b / 16%);
+	transition-duration: 0.2;
+}
+
+.button:active {
+	background-color: rgb(from var(--color-text-primary) r g b / 32%);
+	transition-duration: 0.2;
+}
