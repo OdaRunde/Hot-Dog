@@ -1,7 +1,5 @@
 # About
 
-About
-
 Hot Dog is a digital dog show platform that lets anyone participate, no matter where they are. Traditional dog shows require physical attendance, which excludes many potential participants. This platform removes that barrier — users can enter their own dog into a competition, or simply browse, vote, and comment on others. Both roles are equally valued parts of the experience.
 
 The goal is to create a fun and engaging space where users feel part of a shared community event. The platform is built incrementally, validating the core idea early and adjusting along the way.
